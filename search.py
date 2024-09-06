@@ -78,7 +78,7 @@ def main(query, configure_env, lang, init_page, pages,
         file_types = download.split(",")
         urls = [resultado["link"] for resultado in resultados]
 
-        downloader = FileDownloader("Descargas")
+        downloader = FileDownloader("downloads")
         downloader.filtrar_descargar_archivos(urls, file_types)
 
 if __name__ == "__main__":
